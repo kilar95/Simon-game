@@ -8,9 +8,7 @@ let started = false;
 $(document).ready(function($) {
 
 
-  // random sequence of buttons
   function nextSequence() {
-    // aumento il livello
     userClickedPattern = [];
     level++;
     $("#level-title").html("Level " + level);
@@ -76,7 +74,7 @@ $(document).ready(function($) {
 
   }
 
-  // we call nextSequence on the first keypress
+  // calling nextSequence on the first keypress
   $(document).on("keydown", function() {
 
     if (started === true) {
