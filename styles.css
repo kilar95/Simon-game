@@ -1,27 +1,40 @@
 body {
   text-align: center;
-  background-color: #011F3F;
-}
-
-#level-title {
-  font-family: 'Press Start 2P', cursive;
-  font-size: 3rem;
-  margin:  5%;
-  color: #FEF2BF;
+  background-color: #011f3f;
 }
 
 .container {
-  display: block;
-  width: 50%;
-  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  overflow: hidden;
+}
 
+#level-title {
+  font-family: "Press Start 2P", cursive;
+  font-size: min(3rem, 5vw);
+  line-height: 1.5;
+  margin-top: 10vh;
+  color: #fef2bf;
+}
+
+.game {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin: auto;
 }
 
 .btn {
   margin: 25px;
   display: inline-block;
-  height: 200px;
-  width: 200px;
+  height: min(200px, 20vh);
+  width: min(200px, 30vw);
   border: 10px solid black;
   border-radius: 20%;
 }
